@@ -3,6 +3,16 @@
 <head>
 <title>Colors in Nature: Home</title>
 <link rel="stylesheet" href="styles.css">
+
+<script>
+function add() {
+  let a = documment.getElementById("fn").value;
+  let b = documment.getElementById("sn").value;
+  let c = Number(a) + Number(b);
+  documment.getElementById("ans").innerHTML = c;
+}
+
+</script>
 </head>
 <body>
 
@@ -16,7 +26,14 @@
   
 <hr>
 <h1>Welcome to the calculator</h1>
-<p> </p>
+<p>This is a basic one function calculator that is meant to help you add two numbers together. Future functions will be added when possible. <br>
+First Number <input id = "fn"> <br>
+Second Number <input id = "sn"> <br>
+<button onclick = "add()">Click to add</button>
+</p>
+<br>
+<p>
+  The answer is <span id=ans>______</span></p>
 <br>
 
 <hr>
