@@ -1,1 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Colors in Nature: Home</title>
+<link rel="stylesheet" href="styles.css">
 
+<script>
+function add() {
+let a = document.getElementById("fn").value;
+let b = document.getElementById("sn").value;
+let c = Number(a) + Number(b);
+document.getElementById("ans").innerHTML = c;
+}
+
+function sub() {
+let a = document.getElementById("fn").value;
+let b = document.getElementById("sn").value;
+let c = Number(a) - Number(b);
+document.getElementById("ans").innerHTML = c;
+}
+
+function mult() {
+let a = document.getElementById("fn").value;
+let b = document.getElementById("sn").value;
+let c = Number(a) * Number(b);
+document.getElementById("ans").innerHTML = c;
+}
+
+function div() {
+let a = document.getElementById("fn").value;
+let b = document.getElementById("sn").value;
+let c = Number(a) / Number(b);
+document.getElementById("ans").innerHTML = c;
+}
+  
+function expo() {
+let a = document.getElementById("fn").value;
+let b = document.getElementById("sn").value;
+let c = Number(a) ** Number(b);
+document.getElementById("ans").innerHTML = c;
+}
+</script>
+</head>
+<body>
+
+<img src="images/BannerImage.jpg" alt="Green background with gold dusting it">
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="contact.html">Contact Me</a></li>
+  <li><a href="js.html">Javascript Calculator</a></li>
+  <li><a class="active" href="js1.html">Javascript 4 Function Calculator</a></li>
+</ul>
+  
+<hr>
+<h1>Welcome to the calculator</h1>
+<p>This is a basic five function calculator. Future functions will be added when possible. <br>
+First Number <input id = "fn"> <br>
+Second Number <input id = "sn"> <br>
+  
+<button onclick = "add()">+</button>
+<button onclick = "sub()">-</button>
+<button onclick = "mult()">*</button>
+<button onclick = "div()">/</button>
+<button onclick = "expo()">^</button>
+</p>
+  
+<br>
+  
+<p>
+  The answer is <span id = "ans">______</span></p>
+<br>
+
+<hr>
+  
+&copy; Jacob Hope
+<br>
+<p>Here is a great school to learn how to make a site like this <a href="http://usu.edu">Utah State</a></p>
+<br>
+<a href="mailto:wewillflytoday@gmail.com">Email me here</a>
+</body>
+</html>
